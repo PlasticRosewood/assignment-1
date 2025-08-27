@@ -15,7 +15,7 @@ export default (req : Request, res : Response) : void => {
     return;
   }
 
-  const fibN : number = fibonacci(parseInt(num)) as number;
+  const fibN : number = fibonacci(parseInt(num));
   let result = `fibonacci(${num}) is ${fibN}`;
 
   if (fibN < 0) {
